@@ -1,0 +1,54 @@
+@import "variable";
+* {box-sizing: border-box;}
+body{
+  font-family:$fonts-text;
+  background-color:$asphalt;
+  color:$clouds;
+  font-size:$text-font-size;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-headings;
+  font-size: 1rem;
+}
+
+.nav{
+  float: left;
+  width: 30%;
+}
+.container{
+  width: 70%;
+  float: left;
+  padding: 15px;
+}
+
+.shape{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: $text-font-size;
+  background-color: lighten($asphalt, 30%);
+  border: 1px solid lighten($asphalt, 26%);
+}
+.shape1{
+  @extend .shape;
+}
+// For new.html
+.card{
+  padding-left: 30%;
+  float: left;
+  width: 50%;
+  height: 40px;
+}
+.card 2{
+  float: left;
+  width: 50%;
+  height: 40px;
+}
+.card 3{
+  float: right;
+  width: 50%;
+}
+.card 4{
+float: right;
+width: 50%;
+}
